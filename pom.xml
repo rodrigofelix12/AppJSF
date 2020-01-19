@@ -34,6 +34,13 @@
     	<version>2.2.13</version>
     </dependency>
     
+    <!-- JSF -->
+    <dependency>
+		<groupId>com.sun.faces</groupId>
+		<artifactId>jsf-impl</artifactId>
+		<version>2.2.13</version>
+    </dependency>
+    
     <!-- PrimeFaces -->
     <dependency>
     	<groupId>org.primefaces</groupId>
