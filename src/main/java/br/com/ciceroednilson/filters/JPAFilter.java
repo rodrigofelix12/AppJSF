@@ -17,7 +17,7 @@ import javax.servlet.annotation.WebFilter;
  * ESSE FILTER VAI SER CHAMADO TODA VEZ QUE FOR REALIZADO
  * UMA REQUISIÇÃO PARA O FACES SERVLET
  */
-@WebFilter("/JPAFilter")
+@WebFilter(servletNames ={ "Faces Servlet" })
 public class JPAFilter implements Filter {
 	
 	private EntityManagerFactory entityManagerFactory;
@@ -39,6 +39,9 @@ public class JPAFilter implements Filter {
 		
 		//ADICIONANDO ELE NA REQUISIÇÃO
 		request.setAttribute("entityManager", entityManager);
+		
+		/*INICIANDO UMA TRANSAÇÃO*/
+		entityManager.getTransaction().begin();
 
 		// INICIANDO A TRANSAÇÃO
 		chain.doFilter(request, response);

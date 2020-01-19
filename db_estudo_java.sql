@@ -23,3 +23,5 @@ ALTER TABLE db_estudo_java.tb_pessoa ADD FOREIGN KEY (id_usuario_cadastro) REFER
 INSERT INTO db_estudo_java.tb_usuario (ds_login, ds_senha) VALUES('admin', '123456');
 
 SHOW FULL COLUMNS FROM tb_pessoa;
+
+select * from db_estudo_java.tb_usuario;

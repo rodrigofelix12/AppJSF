@@ -49,12 +49,14 @@
     </dependency>
     
     <!-- CDI -->
-    <dependency>
-    	<groupId>javax.enterprise</groupId>
-    	<artifactId>cdi-api</artifactId>
-    	<version>1.2</version>
-    	<scope>runtime</scope>
-    </dependency>
+    <!-- https://mvnrepository.com/artifact/javax.enterprise/cdi-api -->
+	<dependency>
+	    <groupId>javax.enterprise</groupId>
+	    <artifactId>cdi-api</artifactId>
+	    <version>1.2</version>
+	    <scope>provided</scope>
+	</dependency>
+
     
     <!-- JBoss/Weld implementação de referencia do CDI
     	para Servlet Container (Exemplo:Tomcat) -->
@@ -91,6 +93,11 @@
     	<groupId>org.jboss</groupId>
     	<artifactId>jandex</artifactId>
     	<version>1.2.2.Final</version>
+    </dependency>
+    <dependency>
+    	<groupId>javax.el</groupId>
+    	<artifactId>javax.el-api</artifactId>
+    	<version>3.0.0</version>
     </dependency>
   </dependencies>
 
