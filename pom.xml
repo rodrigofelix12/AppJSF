@@ -65,7 +65,7 @@
     	<artifactId>weld-servlet</artifactId>
     	<version>2.2.6.Final</version>
     	<scope>runtime</scope>
-    </dependency>
+    </dependency>    
     
     <!-- Métodos uteis para manipulação de String, métodos e etc -->
     <dependency>
